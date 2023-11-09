@@ -76,6 +76,16 @@ body {
     font-weight: 700;
 }
 
+h1, h2, h3, h4, h5, h6 {
+    margin-top: 2%;
+    margin-bottom: 3%;
+}
+
+p {
+    margin-top: 2%;
+    margin-bottom: 2.5%;
+}
+
 #logo a img {
     justify-content: left;
     width: 20%;
@@ -99,23 +109,24 @@ body {
 
 #rodape {
     background-color: white;
-    display: flex;
-    padding-left: 25px;
-    padding-right: 25px;
+    width: 100%;
+    display: inline-flex;
     padding-top: 5px;
-    padding-bottom: 5px;
 }
 
 #rodape div {
     padding: 3%;
 }
 
+#ajuda-rodape h4, li, a, p {
+    margin-top: 1.5%;
+    margin-bottom: 2%;
+}
+
 #ajuda-rodape a {
-    padding: 5px;
     text-decoration: none;
     font-size: 0.9em;
     font-weight: 700;
-    display: inline-flex;
     color: #1460D0;
 }
 
@@ -124,25 +135,16 @@ body {
     color: #FC9A0A;
 }
 
-
-#ajuda-rodape h4 {
-    padding-bottom: 15px;
-}
-
-#redes-sociais ul {
+#redes-sociais {
     display: flex;
+    margin-right: 2%;
 }
 
-#redes-sociais ul li {
-    list-style-type: none;
-    padding-top: 400px
+#redes-sociais img {
+    width: 20%;
 }
 
-#redes-sociais ul li a img {
-    width: 25%;
-}
-
-#redes-sociais ul li a img:hover {
+#redes-sociais a img:hover {
     transform: scale(1.5);
     transition: 1s;
 }
@@ -150,7 +152,6 @@ body {
 .container {
     max-width: 400px;
     margin: 0 auto;
-    padding: 20px;
 }
 
 label, input {
@@ -185,14 +186,14 @@ button:hover {
     border-radius: 10px;
     width: 25%;
     height: auto;
-    padding: 1% 1% 10% 1%;
+    padding: 1% 1% 1% 1%;
     margin: 2%;
     background-color: #e1e9f3;
 }
 
 .card img {
     width: 100%;
-    height: 70%;
+    height: 50%;
     border-radius: 10px;
 }
 
@@ -215,14 +216,44 @@ button:hover {
 }
 
 #corpo {
+    align-items: center;
+}
+
+#text {
     background-color: rgba(255, 255, 255, 0.541);
     margin-inline: 30%;
     margin-top: 100px;
-    margin-bottom: 5%;
+    margin-bottom: 2%;
     padding: 1% 2%;
     justify-content: center;
     text-align: left;
     max-width: 100%;
     font-weight: 500;
     font-family: "Roboto";
+}
+
+#text h3 img {
+    width: 100%;
+    margin-top: 3.5%;
+    margin-bottom: 4%;
+}
+
+#imagensN {
+    position: relative;
+    overflow: hidden;
+    display: inline-flex;
+    margin-bottom: 2%;
+}
+
+#imagensN img {
+    width: 25%;
+    margin: 0.5%;
+}
+
+#imagensN img:hover {
+    transform: scale(1.5);
+    transition: 0.4s;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
 }
