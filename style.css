@@ -34,14 +34,17 @@ body {
 ol, ul {
 	list-style: none;
 }
+
 blockquote, q {
 	quotes: none;
 }
+
 blockquote:before, blockquote:after,
 q:before, q:after {
 	content: '';
 	content: none;
 }
+
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
@@ -74,6 +77,35 @@ body {
     font-family: "Lato";
     font-size: 70%;
     font-weight: 700;
+}
+
+#calendario {
+    font-family: Arial, sans-serif;
+  }
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+  }
+
+th {
+    background-color: #f2f2f2;
+  }
+
+td {
+    height: 80px;
+  }
+
+.today {
+    background-color: #4CAF50;
+    color: white;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -121,7 +153,6 @@ p {
     padding-left: 10%;
     padding-right: 10%;
 }
-
 
 #ajuda-rodape h4, li, a, p {
     margin-top: 1.5%;
@@ -302,7 +333,7 @@ button:hover {
 }
 
 #contatoo {
-    color: white;
+    color: rgb(0, 0, 0);
     padding-left: 408px;
     padding-right: 408px;
 }
@@ -310,6 +341,7 @@ button:hover {
 #calendario {
     padding-left: 10%;
     padding-right: 10%;
+    position: relative;
 }
 
 #calendario table tr th {

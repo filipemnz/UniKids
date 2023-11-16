@@ -24,46 +24,6 @@
 <!--Nav Bar-->
 
 <!--Conteúdo-->
-
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Calendário</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-    }
-
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      margin-top: 20px;
-    }
-
-    th, td {
-      border: 1px solid #ddd;
-      padding: 8px;
-      text-align: center;
-    }
-
-    th {
-      background-color: #f2f2f2;
-    }
-
-    td {
-      height: 80px;
-    }
-
-    .today {
-      background-color: #4CAF50;
-      color: white;
-    }
-  </style>
-</head>
-<body>
-
     <div id="calendario">
     <h2 class="meses">JANEIRO</h2>
 
@@ -714,38 +674,40 @@
   </table>
   <br>
 </div>
-
-</body>
-</html>
-
-
-...
 <!--Conteúdo-->
 
+<!--Rodapé-->
 <footer id="rodape">
-    <div id="mapa">
-        <h4>Nosso endereço:</h4>
-        <h5>Av. Augusto Franco, 2340 - Siqueira Campos, Aracaju - SE, 49075-470</h5>
+  <div id="mapa">
+      <h4>Nosso endereço:</h4>
+      <h5>Av. Augusto Franco, 2340 - Siqueira Campos, Aracaju - SE, 49075-470</h5>
 
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4493.534695300833!2d-37.07496060314897!3d-10.925416748534433!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x71ab3f0b6497777%3A0x7b47144950f4af68!2sUNINASSAU%20-%20Aracaju!5e0!3m2!1spt-BR!2sbr!4v1695319452861!5m2!1spt-BR!2sbr" width="250" height="150" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </div>
-    
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4493.534695300833!2d-37.07496060314897!3d-10.925416748534433!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x71ab3f0b6497777%3A0x7b47144950f4af68!2sUNINASSAU%20-%20Aracaju!5e0!3m2!1spt-BR!2sbr!4v1695319452861!5m2!1spt-BR!2sbr" width="250" height="150" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </div>
+  
 
-    <div id="ajuda-rodape">
-        <ul>
-            <li><h4>AJUDA / CONTATO</h4></li>
-            <li><a href="https://api.whatsapp.com/send/?phone=5579981461514&text=Oi" target="_blank">Whatsapp</a></li>
-            <li><a href="#contatoo">contato@outlook.com</a></li>
-            <li><a href="#contatoo">GRUPO: Marcelo Lima, Victor Luiz, Filipe Menezes.</a></li>
-        </ul>
+  <div id="ajuda-rodape">
+      <ul>
+          <li><h4>AJUDA / CONTATO</h4></li>
+          <li><a href="https://api.whatsapp.com/send/?phone=5579981461514&text=Oi" target="_blank">Whatsapp</a></li>
+          <li><a href="#contatoo">contato@outlook.com</a></li>
+          <button id="devs-button" onclick ="toggleDevs()">Devs</button>
+              <div id="devs-list" style="display: none;">
+                  <p>Filipe Menezes</p>
+                  <p>Victor Luiz</p>
+                  <p>Marcelo Lima</p>
+              </div>
+      </ul>
 
-        <div id="redes-sociais">
-            <a href="https://www.instagram.com/uninassau/" target="_blank"><img src="images/instagram.png" alt=""></a>
-            <a href="https://www.facebook.com/UNINASSAU/" target="_blank"><img src="images/facebook (1).png" alt=""></a>
-            <a href="https://www.youtube.com/user/uninassau" target="_blank"><img src="images/youtube.png" alt=""></a>
-        </div>
-    </div>
+      <div id="redes-sociais">
+          <a href="https://www.instagram.com/uninassau/" target="_blank"><img src="images/instagram.png" alt=""></a>
+          <a href="https://www.facebook.com/UNINASSAU/" target="_blank"><img src="images/facebook (1).png" alt=""></a>
+          <a href="https://www.youtube.com/user/uninassau" target="_blank"><img src="images/youtube.png" alt=""></a>
+      </div>
+  </div>
+  
 </footer>
-
+<!--Rodapé-->
+<script src="script.js" type="text/javascript"></script>
 </body>
 </html>
